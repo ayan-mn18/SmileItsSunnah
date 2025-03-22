@@ -1,35 +1,39 @@
 {
-  "name": "quran-json",
-  "version": "3.1.2",
-  "description": "Quran text, transliteration, and translations in JSON format.",
-  "keywords": [
-    "translations",
-    "quran"
-  ],
-  "homepage": "https://github.com/risan/quran-json#readme",
-  "bugs": {
-    "url": "https://github.com/risan/quran-json/issues"
-  },
+  "name": "smileitssunnah",
+  "description": "AI Agent for Quran & Sunnah Daleel",
+  "homepage": "https://github.com/ayan-mn18",
   "license": "CC-BY-4.0",
   "author": {
-    "name": "Risan Bagja Pradana",
-    "email": "risanbagja@gmail.com",
-    "url": "https://risanb.com"
+    "name": "Ayan Mansuri",
+    "email": "ayanmansoori44@gmail.com",
+    "url": "https://github.com/ayan-mn18"
   },
   "main": "dist/chapters/en/index.json",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/risan/quran-json.git"
-  },
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only server.ts"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.10",
     "axios": "^0.21.4",
     "fs-extra": "^10.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.88.0",
+    "ts-node-dev": "^2.0.0"
   }
 }

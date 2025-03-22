@@ -2,3 +2,4 @@
 data
 scripts
 yarn.lock
+.env

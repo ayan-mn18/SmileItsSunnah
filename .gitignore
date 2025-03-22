@@ -1,3 +1,70 @@
-.idea
-node_modules
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Cache
+.npm/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache*/
+
+# Dependency lock files (uncomment if you don't want to track them)
 yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Misc
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+
+# Optional: Production bundle
+*.bundle.js
+*.bundle.css
+*.chunk.js
+
+# Serverless
+.serverless/
+
+# Local DynamoDB
+.dynamodb/
+
+# Testing
+/cypress/videos/
+/cypress/screenshots/

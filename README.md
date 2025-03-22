@@ -122,3 +122,4 @@ $ npm run build
 ## License
 
 [CC-BY-SA 4.0](https://github.com/risan/quran-json/blob/master/LICENSE.txt) · [Risan Bagja Pradana](https://risanb.com)
+# SmileItsSunnah
